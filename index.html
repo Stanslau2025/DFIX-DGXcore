@@ -674,9 +674,15 @@
     }
     
     .player-info {
-        display: flex;
-        align-items: center;
-        flex: 1;
+    position: fixed;
+    bottom: 66px; /* moves it just above the footer player-container */
+    left: 0.5px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 6px 12px  2px 2px ;
+    border-radius: 10px;
+    z-index: 1000; /* higher than .player-container */
     }
     
     .player-album-art {
@@ -1179,15 +1185,15 @@
     </div>
     
     <!-- Player -->
-    <div class="player-container">
-        <div class="player-info">
+         <div class="player-info">
             <img src="https://via.placeholder.com/50x50/ff00cc/ffffff?text=DFIX" alt="Now Playing" class="player-album-art">
             <div class="player-text">
                 <h4>Latest Hit Single</h4>
                 <p>DFIX DGXcore</p>
             </div>
-        </div>
-        
+         </div>
+    
+    <div class="player-container">
         <div class="progress-container">
             <div class="progress-bar">
                 <div class="progress"></div>
