@@ -1230,6 +1230,17 @@
 
 
  <script>
+     document.addEventListener("DOMContentLoaded", function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get("back") === "artist") {
+        const artistLink = document.getElementById("artists-link");
+        if (artistLink) {
+            artistLink.click();  // simulate pressing the Artist button
+        }
+    }
+});
+
+     
     // ===== AUTHENTICATION SYSTEM =====
     const authOverlay = document.getElementById('auth-overlay');
     const authDialog = document.getElementById('auth-dialog');
