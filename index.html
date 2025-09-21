@@ -1233,9 +1233,10 @@
      document.addEventListener("DOMContentLoaded", function () {
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.get("back") === "artist") {
+        // find the artist link
         const artistLink = document.getElementById("artists-link");
         if (artistLink) {
-            artistLink.click();  // simulate pressing the Artist button
+            artistLink.click();  // simulate clicking it
         }
     }
 });
