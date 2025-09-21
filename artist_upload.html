@@ -687,8 +687,9 @@
 
     <script>
        function goBack() {
-    window.location.href = "index.html#artist-dashboard";  
-    }
+    // Reload index.html with a query so we know to trigger Artist
+    window.location.href = "index.html?back=artist";
+}
         
         // File upload simulation
         const uploadAreas = document.querySelectorAll('.upload-area');
